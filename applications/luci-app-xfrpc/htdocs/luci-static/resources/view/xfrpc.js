@@ -5,7 +5,7 @@
 'require rpc';
 'require dom';
 'require tools.widgets as widgets';
-'require tools.github as github';
+// 'require tools.github as github';
 
 var callServiceList = rpc.declare({
 	object: 'service',
@@ -103,8 +103,8 @@ return view.extend({
 		var web_proxy = ['http', 'https'];
 
 		m = new form.Map('xfrpc', _('xfrpc'));
-		m.description = github.desc(
-			'xfrpc is a c language frp client for frps.', 'liudf0716', 'xfrpc');
+		// m.description = github.desc('xfrpc is a c language frp client for frps.', 'liudf0716', 'xfrpc');
+			
 		
 		s = m.section(form.NamedSection, '_status');
 		s.anonymous = true;
